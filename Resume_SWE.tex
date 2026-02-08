@@ -1,0 +1,241 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+ \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Hector Eduardo Tovar Mendoza} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +52 (81) 2436 3149 ~ 
+    \href{mailto:h.tovarm07@gmail.com}
+    {\raisebox{-0.2\height}\faEnvelope\  
+    \underline{h.tovarm07@gmail.com}} ~ 
+    \href{www.linkedin.com/in/hectortovarm}
+    {\raisebox{-0.2\height}\faLinkedin\ 
+    \underline{linkedin.com/in/hectortovarm}}  ~
+    \href{https://github.com/htovarm7}
+    {\raisebox{-0.2\height}\faGithub\ 
+    \underline{github.com/htovarm7}}
+    \vspace{-10pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Tecnológico de Monterrey}{Expected June 2027}
+      {Bachelor of Engineering in Robotics and Digital Systems}
+      {Monterrey, 
+      Nuevo León}
+        \resumeItemListStart
+            \resumeItem{\textbf{Relevant Coursework:} 
+            Data structures and algorithms, 
+            Object-oriented programming, Computational 
+            architecture}
+            \resumeItem{\textbf{Cumulative GPA:} 90/100}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+  
+%-----------Work Experience-----------
+\section{Work Experience}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{Software Engineer} $|$ \emph{Ventologix} $|$ React, Next.js, FastAPI, MySQL, Docker, GCP, Langraph, OpenAI}
+    {April 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{Architected a proprietary full-stack ecosystem using \textbf{React (Next.js)} and \textbf{FastAPI}, delivering real-time visualization that served as a \textbf{key market differentiator} instrumental in closing \textbf{40\% of total revenue}.}
+        \resumeItem{Engineered a database optimization strategy by implementing temporal partitioning on monolithic \textbf{MySQL} tables, which \textbf{reduced stored procedure execution time by 90\%} and accelerated query lookups.}
+        \resumeItem{Developed and deployed a containerized \textbf{AI Analytics Agent} on \textbf{GCP Compute Engine} using \textbf{Docker} and \textbf{Cloudflare Tunnels}, enabling secure, automated predictive insights for client data.}
+    \resumeItemListEnd
+    \vspace{-15pt}
+    \resumeProjectHeading
+    {\textbf{Front-End \& Mobile Developer} $|$ \emph{Einter} $|$ React, Kotlin, Firebase, MySQL}
+    {July 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{Developed a modular \textbf{React + Vite} dashboard for administrative staff to generate sales orders and track live inventory, replacing legacy paper-based tracking.}
+        \resumeItem{Created a companion \textbf{Kotlin} mobile app for warehouse staff, implementing barcode scanning to validate stock entries against the web dashboard's records in real-time.}
+        \resumeItem{Implemented database logic to register critical inventory events including \textbf{stock entries, exits, and spoilage}, ensuring end-to-end traceability of products.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{\href{https://github.com/Starman26/AgentCore}{FrEDie: AI/AR Virtual Assistant}} $|$ \emph{Research with MIT} $|$ LangGraph, Python, Claude, Docker, Azure}
+    {November 2025 -- Present}
+    \resumeItemListStart
+        \resumeItem{Developed a \textbf{RAG-based adaptive agent} using \textbf{LangGraph}, implementing \textbf{conversation summarization} and structured persistence to optimize context retention and minimize database latency.}
+        \resumeItem{Implemented an \textbf{adaptive tutoring engine} with \textbf{Human-in-the-Loop} workflows, dynamically adjusting content complexity based on \textbf{learning styles} while validating inputs via interactive questionnaires.}
+        \resumeItem{Engineered a scalable, Dockerized backend on \textbf{Azure} to orchestrate the full lifecycle, utilizing \textbf{Cloudflare Tunnels} to securely route traffic between web clients and the \textbf{Claude AI} model.}
+    \resumeItemListEnd
+      \vspace{-15pt}
+    \resumeProjectHeading
+    {\textbf{{\href{https://github.com/RoBorregos/robocupido2026}{RoBoCupido: AI Matchmaking Agent}} $|$ T3 Stack, TypeScript, Gemini Pro, PostgreSQL, TypeScript}}{January -- February 2026}
+    \resumeItemListStart
+      \resumeItem{Engineered an interactive dating platform using the \textbf{T3 Stack (Next.js, tRPC)} , replacing static sign-up forms with a conversational AI agent that interviews users to determine compatibility.}
+      \resumeItem{Built a stateful \textbf{information extraction pipeline} using Gemini Pro and TypeScript, designing an agentic workflow that dynamically retrieves user preferences (e.g., relationship type, hobbies) to generate structured "About Me" summaries.}
+      \resumeItem{Implemented a matching algorithm that utilizes AI-generated user profiles to pair candidates, presented as a featured project for the university Valentine's Day showcase.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------RESEARCH-----------
+\section{Research}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {RoBorregos Team}{November 2024 -- Present}
+      {Research \& Development Member}{Tecnológico de Monterrey}
+      \resumeItemListStart
+        \resumeItem{Engineered a hybrid pose analysis pipeline utilizing \textbf{MediaPipe} for landmark extraction, \textbf{SVMs} for static state classification, and \textbf{LSTMs} for temporal sequence modeling, achieving \textbf{96\% accuracy} in dynamic gesture recognition.}
+        \resumeItem{Optimized Visual \textbf{Re-Identification (ReID)} architectures to address the "persistent identity" challenge, maintaining \textbf{93\% tracking consistency} across heavy occlusions and crowded environments.}
+        \resumeItem{Spearheaded research on \textbf{monocular depth decomposition} to synthesize high-fidelity 3D point clouds of \textbf{transparent objects}, enabling an \textbf{xArm6} robot to autonomously execute complex grasping tasks.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, C++, C, Kotlin, TypeScript, JavaScript, SQL, C\#, MATLAB \\
+     \textbf{AI, CV \& Robotics:} PyTorch, TensorFlow, OpenCV, YOLO, MediaPipe, Face Recognition, LangGraph, OpenAI API, Claude AI \\
+     \textbf{Web \& Backend:} React, Next.js, FastAPI, Node.js, gRPC, tRPC, RESTful APIs, GraphQL, Prisma, Tailwind CSS \\
+     \textbf{Cloud \& DevOps:} AWS, Azure (Services), GCP, Docker, Vercel, Linux/Unix, Git, GitHub \\
+     \textbf{Databases:} PostgreSQL, MySQL, Supabase \\
+     \textbf{Spoken Languages:} Spanish (Native), English (B2), French (B1)
+    }}
+\end{itemize}
+\vspace{-15pt}
+
+%-----------AWARDS & LEADERSHIP-----------
+\section{Awards \& Leadership}
+\resumeSubHeadingListStart
+  \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{Sole DigiKey Ambassador} $|$ \emph{Only ambassador in LATAM, technical content \& outreach} & Present \\
+      \textbf{1st Place, International LARC Open Robotics} $|$ \emph{Top autonomous robotics performance} & Nov 2025 \\
+      \textbf{2nd Place, HackMTY} $|$ \emph{Banorte track, 400+ competitors} & Oct 2025 \\
+      \textbf{1st Place, National LARC Open Robotics} $|$ \emph{National robotics champion} & Apr 2025 \\
+      \textbf{1st Place, ShellHacks} $|$ \emph{Waymo track} & Sep 2024 \\
+    \end{tabular*}
+\resumeSubHeadingListEnd
+
+\end{document}
